@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Tienda online de ropa, calzado y accesorios.">
+    <title>Punto Norte | Tienda online</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="encabezado">
+        <a class="logo" href="#home" aria-label="Punto Norte, inicio">PUNTO<span>NORTE.</span></a>
+        <nav class="navegacion" aria-label="Navegación principal">
+            <a href="#home">Inicio</a>
+            <a href="#productos">Productos</a>
+            <a href="#cuenta">Mi cuenta</a>
+            <a href="#pagos">Pagos</a>
+            <a href="#contacto">Contacto</a>
+            <a href="#ayuda">Ayuda</a>
+            <a href="#horario">Horarios</a>
+            <a href="#ubicacion">Ubicación</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="portada">
+            <div class="portada-contenido">
+                <p class="etiqueta">NUEVA TEMPORADA · 2026</p>
+                <h1>Vestite como<br>te gusta vivir.</h1>
+                <p class="portada-texto">Prendas y calzado para acompañarte todos los días. Elegí tus favoritos y encontrá tu propio estilo.</p>
+                <a class="boton boton-claro" href="#productos">Explorar productos <span aria-hidden="true">→</span></a>
+            </div>
+            <div class="portada-imagen" role="img" aria-label="Conjunto de ropa de estilo urbano"></div>
+        </section>
+
+        <section id="productos" class="seccion productos-seccion">
+            <div class="encabezado-seccion">
+                <div>
+                    <p class="etiqueta etiqueta-verde">SELECCIÓN PUNTO NORTE</p>
+                    <h2>Lo que estás buscando.</h2>
+                </div>
+                <p>Una selección simple de prendas y calzado para todos los días.</p>
+            </div>
+
+            <div class="productos">
+                <article class="producto">
+                    <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=900&q=85" alt="Remera básica de color claro" loading="lazy">
+                    <div class="producto-info">
+                        <p class="categoria">BÁSICOS</p>
+                        <h3>Remera clásica</h3>
+                        <p class="descripcion">Un básico cómodo y fácil de combinar.</p>
+                        <div class="producto-pie"><strong>$15.000</strong><a href="#pagos" class="boton-producto">Comprar</a></div>
+                    </div>
+                </article>
+
+                <article class="producto">
+                    <img src="https://images.unsplash.com/photo-1542272604-787c3835535d?auto=format&fit=crop&w=900&q=85" alt="Pantalón de jean azul" loading="lazy">
+                    <div class="producto-info">
+                        <p class="categoria">INDUMENTARIA</p>
+                        <h3>Jean recto</h3>
+                        <p class="descripcion">Un corte versátil para cualquier ocasión.</p>
+                        <div class="producto-pie"><strong>$25.000</strong><a href="#pagos" class="boton-producto">Comprar</a></div>
+                    </div>
+                </article>
+
+                <article class="producto">
+                    <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=900&q=85" alt="Zapatilla deportiva roja" loading="lazy">
+                    <div class="producto-info">
+                        <p class="categoria">CALZADO</p>
+                        <h3>Zapatillas urbanas</h3>
+                        <p class="descripcion">Comodidad y estilo para moverte a tu ritmo.</p>
+                        <div class="producto-pie"><strong>$50.000</strong><a href="#pagos" class="boton-producto">Comprar</a></div>
+                    </div>
+                </article>
+
+                <article class="producto">
+                    <img src="https://images.unsplash.com/photo-1551028719-00167b16eac5?auto=format&fit=crop&w=900&q=85" alt="Campera de abrigo" loading="lazy">
+                    <div class="producto-info">
+                        <p class="categoria">ABRIGO</p>
+                        <h3>Campera urbana</h3>
+                        <p class="descripcion">Una capa extra para los días más frescos.</p>
+                        <div class="producto-pie"><strong>$40.000</strong><a href="#pagos" class="boton-producto">Comprar</a></div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="franja">
+            <p>ESTILO PARA TODOS LOS DÍAS</p>
+            <span>Elegí · Combiná · Disfrutá</span>
+        </section>
+
+        <section class="seccion seccion-doble">
+            <div id="cuenta" class="panel">
+                <p class="etiqueta etiqueta-verde">TU ESPACIO</p>
+                <h2>Mi cuenta</h2>
+                <p class="texto-panel">Completá tus datos para crear una cuenta de prueba y consultar tus pedidos.</p>
+                <form class="formulario">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+
+                    <label for="email">Correo electrónico</label>
+                    <input type="email" id="email" name="email" placeholder="nombre@correo.com" required>
+
+                    <label for="password">Contraseña</label>
+                    <input type="password" id="password" name="password" placeholder="Ingresá una contraseña" required>
+
+                    <label for="telefono">Teléfono</label>
+                    <input type="tel" id="telefono" name="telefono" placeholder="11 1234-5678">
+
+                    <button type="submit" class="boton boton-oscuro">Crear cuenta</button>
+                </form>
+            </div>
+
+            <div id="pagos" class="panel panel-pagos">
+                <p class="etiqueta etiqueta-verde">FINALIZÁ TU COMPRA</p>
+                <h2>Medios de pago</h2>
+                <p class="texto-panel">Seleccioná un medio de pago y dejanos tus datos de contacto para coordinar la compra.</p>
+                <form class="formulario">
+                    <label for="producto">Producto</label>
+                    <select id="producto" name="producto">
+                        <option>Remera clásica — $15.000</option>
+                        <option>Jean recto — $25.000</option>
+                        <option>Zapatillas urbanas — $50.000</option>
+                        <option>Campera urbana — $40.000</option>
+                    </select>
+
+                    <label for="metodo">Método de pago</label>
+                    <select id="metodo" name="metodo">
+                        <option>Tarjeta de crédito</option>
+                        <option>Tarjeta de débito</option>
+                        <option>Transferencia bancaria</option>
+                    </select>
+
+                    <label for="titular">Nombre del titular</label>
+                    <input type="text" id="titular" name="titular" placeholder="Nombre y apellido">
+
+                    <label for="email-pago">Correo de contacto</label>
+                    <input type="email" id="email-pago" name="email-pago" placeholder="nombre@correo.com" required>
+
+                    <button type="submit" class="boton boton-oscuro">Continuar</button>
+                </form>
+                <p class="aviso">Sitio de demostración escolar: no procesa pagos reales ni almacena información bancaria.</p>
+            </div>
+        </section>
+
+        <section class="seccion informacion">
+            <article id="contacto" class="info-item">
+                <span class="icono">01</span>
+                <p class="etiqueta etiqueta-verde">ESTAMOS PARA AYUDARTE</p>
+                <h2>Contacto</h2>
+                <p>¿Tenés una consulta sobre un producto o una compra?</p>
+                <a href="mailto:contacto@mitienda.com">contacto@mitienda.com</a>
+                <a href="tel:+541112345678">11 1234-5678</a>
+            </article>
+
+            <article id="ayuda" class="info-item">
+                <span class="icono">02</span>
+                <p class="etiqueta etiqueta-verde">PREGUNTAS FRECUENTES</p>
+                <h2>Ayuda</h2>
+                <p>Podés comunicarte con nosotros para resolver dudas sobre productos, compras y medios de pago.</p>
+                <a href="#contacto">Ir a contacto →</a>
+            </article>
+
+            <article id="horario" class="info-item">
+                <span class="icono">03</span>
+                <p class="etiqueta etiqueta-verde">ATENCIÓN</p>
+                <h2>Horarios</h2>
+                <p>Lunes a viernes: 9:00 a 18:00</p>
+                <p>Sábados: 9:00 a 13:00</p>
+                <p>Domingos: cerrado</p>
+            </article>
+
+            <article id="ubicacion" class="info-item">
+                <span class="icono">04</span>
+                <p class="etiqueta etiqueta-verde">DÓNDE ESTAMOS</p>
+                <h2>Ubicación</h2>
+                <p>Buenos Aires, Argentina.</p>
+                <p>Podés acercarte durante nuestro horario de atención para realizar consultas.</p>
+            </article>
+        </section>
+    </main>
+
+    <footer class="pie">
+        <a class="logo logo-pie" href="#home">PUNTO<span>NORTE.</span></a>
+        <p>© 2026 Punto Norte. Todos los derechos reservados.</p>
+        <a href="#home">Volver arriba ↑</a>
+    </footer>
+</body>
+</html>

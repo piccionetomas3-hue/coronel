@@ -1,0 +1,134 @@
+/* Configuracion general */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f6f3ec;
+    color: #25343b;
+    line-height: 1.6;
+}
+
+/* Encabezado */
+header {
+    background: linear-gradient(135deg, #123047, #176b87, #39a6b8);
+    color: white;
+    text-align: center;
+    padding: 65px 20px;
+}
+
+header h1 {
+    font-size: 42px;
+    margin-bottom: 10px;
+}
+
+header h2 {
+    font-size: 23px;
+    margin-bottom: 15px;
+}
+
+header p {
+    max-width: 700px;
+    margin: 10px auto;
+}
+
+.subtitulo {
+    color: #39a6b8;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 13px;
+}
+
+header .subtitulo {
+    color: #c8f2ed;
+}
+
+/* Menu */
+nav {
+    background-color: #123047;
+    text-align: center;
+    padding: 15px;
+    position: sticky;
+    top: 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 18px;
+}
+
+nav a:hover {
+    color: #9ce4df;
+}
+
+/* Contenido */
+main {
+    max-width: 1100px;
+    margin: 35px auto;
+    padding: 0 20px;
+}
+
+section {
+    background-color: white;
+    padding: 30px;
+    margin-bottom: 25px;
+    border-radius: 15px;
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.08);
+}
+
+section h2 {
+    color: #123047;
+    font-size: 30px;
+    margin-bottom: 12px;
+}
+
+section h3 {
+    color: #176b87;
+    margin: 20px 0 12px;
+}
+
+section p {
+    margin-bottom: 10px;
+}
+
+.introduccion {
+    text-align: center;
+}
+
+/* Tarjetas de lugares */
+.lugares {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+article {
+    background-color: #e8f6f5;
+    padding: 20px;
+    border-radius: 12px;
+    border: 1px solid #d9eceb;
+}
+
+article h4 {
+    color: #123047;
+    margin-bottom: 8px;
+}
+
+article a {
+    color: #176b87;
+    font-weight: bold;
+}
+
+/* Pie de pagina */
+footer {
+    background-color: #123047;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
