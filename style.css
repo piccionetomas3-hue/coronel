@@ -1,0 +1,291 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #10141d;
+    color: #f4f5f7;
+    line-height: 1.6;
+}
+
+/* ENCABEZADO */
+.encabezado {
+    background: #10141d;
+    padding: 22px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #293140;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.logo, nav a, footer a {
+    color: white;
+    text-decoration: none;
+}
+
+.logo {
+    font-weight: bold;
+}
+
+nav {
+    display: flex;
+    gap: 22px;
+    flex-wrap: wrap;
+}
+
+nav a, footer a {
+    color: #c5ccda;
+    font-size: 14px;
+}
+
+nav a:hover, footer a:hover {
+    color: #69a7ff;
+}
+
+/* PORTADA */
+.portada {
+    min-height: 590px;
+    padding: 90px 12%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 55px;
+}
+
+.portada-texto {
+    max-width: 650px;
+}
+
+.etiqueta, .categoria {
+    color: #69a7ff;
+    font-weight: bold;
+}
+
+.etiqueta {
+    font-size: 12px;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+h1 {
+    font-size: clamp(38px, 6vw, 64px);
+    line-height: 1.1;
+}
+
+.portada h1 span {
+    color: #69a7ff;
+}
+
+.portada h2 {
+    color: #b8c3d5;
+    margin: 15px 0;
+}
+
+.descripcion, .texto-seccion {
+    color: #b8c0ce;
+    max-width: 700px;
+}
+
+/* BOTONES */
+.acciones {
+    display: flex;
+    gap: 14px;
+    flex-wrap: wrap;
+    margin-top: 28px;
+}
+
+.boton {
+    display: inline-block;
+    padding: 12px 20px;
+    background: #397fe0;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+.boton:hover {
+    background: #5595f0;
+}
+
+.boton-secundario {
+    background: transparent;
+    border: 1px solid #64748b;
+}
+
+/* FOTO */
+.foto-contenedor {
+    width: 270px;
+    height: 270px;
+    flex-shrink: 0;
+    border: 5px solid #273b58;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.foto-contenedor img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* SECCIONES */
+.seccion {
+    padding: 85px 12%;
+    scroll-margin-top: 100px;
+}
+
+.seccion h2 {
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+.fondo {
+    background: #171e2a;
+}
+
+/* PROYECTOS */
+.tarjetas {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+    margin-top: 35px;
+}
+
+.tarjeta {
+    background: #202938;
+    border: 1px solid #303d50;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.tarjeta img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.tarjeta-contenido {
+    padding: 22px;
+}
+
+.categoria {
+    font-size: 11px;
+}
+
+.tarjeta h3 {
+    margin: 8px 0;
+}
+
+.tarjeta p:not(.categoria) {
+    color: #b8c0ce;
+    font-size: 14px;
+}
+
+.tarjeta a {
+    display: inline-block;
+    color: #80b5ff;
+    margin-top: 18px;
+    text-decoration: none;
+}
+
+/* HABILIDADES Y FORMACION */
+.habilidades {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+    margin-top: 28px;
+}
+
+.habilidades div, .formacion-item {
+    background: #202938;
+    border: 1px solid #303d50;
+    border-radius: 8px;
+    padding: 22px;
+}
+
+.habilidades p, .formacion-item p {
+    color: #b8c0ce;
+}
+
+.formacion-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 25px;
+}
+
+.formacion-item span {
+    color: #80b5ff;
+}
+
+/* CONTACTO */
+.contacto {
+    text-align: center;
+}
+
+.contacto .texto-seccion {
+    margin: 0 auto 25px;
+}
+
+/* PIE DE PAGINA */
+footer {
+    padding: 25px 8%;
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #293140;
+    color: #9da8b8;
+    font-size: 13px;
+}
+
+/* ADAPTACION A CELULARES */
+@media (max-width: 800px) {
+    .encabezado {
+        flex-direction: column;
+    }
+
+    .portada {
+        flex-direction: column-reverse;
+        text-align: center;
+        padding: 65px 8%;
+    }
+
+    .acciones {
+        justify-content: center;
+    }
+
+    .foto-contenedor {
+        width: 210px;
+        height: 210px;
+    }
+
+    .seccion {
+        padding: 65px 8%;
+    }
+
+    .tarjetas {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 540px) {
+    .tarjetas, .habilidades {
+        grid-template-columns: 1fr;
+    }
+
+    .formacion-item, footer {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .seccion h2 {
+        font-size: 30px;
+    }
+}

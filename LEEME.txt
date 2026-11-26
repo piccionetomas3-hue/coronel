@@ -1,0 +1,18 @@
+PORTAFOLIO PARA GITHUB PAGES
+
+1. Descomprimí esta carpeta.
+2. En GitHub creá un repositorio público (por ejemplo: mi-portafolio).
+3. Subí index.html, style.css y las carpetas imagenes y archivos.
+4. En el repositorio entrá a Settings > Pages.
+5. En Build and deployment elegí Deploy from a branch.
+6. Seleccioná la rama main y la carpeta /(root), y guardá.
+7. Esperá a que GitHub Pages publique el sitio.
+
+PERSONALIZACIÓN:
+- En index.html reemplazá "Tu nombre", textos, institución y correo.
+- Guardá tu foto como imagenes/perfil.jpg.
+- Agregá capturas como imagenes/proyecto1.png, proyecto2.png y proyecto3.png.
+- Poné tus documentos en archivos y actualizá los enlaces en index.html.
+- Si no tenés un archivo para una tarjeta, cambiá el enlace por el de tu proyecto publicado.
+
+No incluyas datos personales sensibles en el portafolio.
