@@ -1,0 +1,88 @@
+persona(abraham, 80).
+persona(mona, 80).
+persona(mrburns, 1000).
+persona(skinner, 50).
+persona(homero, 30).
+persona(marge, 30).
+persona(bart, 15).
+persona(lisa, 12).
+persona(maggie, 3).
+persona(milhause, 15).
+persona(edna, 50).
+persona(jaqueline, 80).
+persona(clancy, 80).
+persona(patty, 55).
+persona(selma, 52).
+alien(kang, 101010).
+
+% genero
+
+hombre(abraham).
+hombre(homero).
+hombre(bart).
+hombre(clancy).
+hombre(mrburns).
+hombre(skinner).
+hombre(kang).
+
+mujer(mona).
+mujer(jaqueline).
+mujer(lisa).
+mujer(maggie).
+mujer(marge).
+mujer(patty).
+mujer(selma).
+mujer(edna).
+
+% relaciones de progenitor simpson
+
+progenitor(abraham, homero).
+progenitor(mona, homero).
+progenitor(homero, bart).
+progenitor(homero, lisa).
+progenitor(homero, maggie).
+progenitor(marge, maggie).
+progenitor(marge, lisa).
+progenitor(marge, bart).
+progenitor(marge, maggie).
+
+% relaciones de progenitor otros
+
+progenitor(clancy, marge).
+progenitor(jaqueline, marge).
+progenitor(clancy, patty).
+progenitor(clancy, celma).
+progenitor(jaqueline, patty).
+progenitor(jaqueline, celma).
+
+% relaciones de progenitor kang
+progenitor(kang, maggie).
+progenitor(marge, maggie).
+
+% relaciones de abuelos
+
+abuelo(abraham, bart).
+abuelo(abraham, lisa).
+abuelo(abraham, maggie).
+
+abuela(mona, lisa).
+abuela(mona, maggie).
+abuela(mona, bart).
+
+abuelo(clancy, maggie).
+abuelo(clancy, lisa).
+abuelo(clancy, bart).
+
+abuela(jaqueline, bart).
+abuela(jaqueline, maggie).
+abuela(jaqueline, lisa).
+
+abuelo(X, Y) :-hombre(X), progenitor(X, Z), progenitor(Z, Y).
+abuela(X, Y) :- mujer(X), progenitor(X, Z), progenitor(Z, Y).
+
+tio(X, Y) :- hombre(X), progenitor(X, Z), hermano(Z, Y).
+tia(X, Y) :- hombre(X), progenitor(X, Z), hermana(Z, Y).
+
+hermano(X, Y) :- hombre(X), progenitor(Z, X), progenitor(Z, Y), X \= Y.
+hermana(X, Y) :- hombre(X), progenitor(Z, X), progenitor(Z, Y), X \= Y.
+
